@@ -1,0 +1,125 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+/*color
+#853D2E
+#DE884F
+*/
+@font-face{
+	font-family: comic;
+	src:url('../font/SVN-Comic Sans MS.ttf');
+
+}
+@font-face{
+	font-family: bubble;
+src:url('../font/Bubblegum.ttf');
+}
+.container{
+	width:100%;
+	position: relative;
+}
+/*LOADING PAGE*/
+.loading{
+	background: #fff;
+	width:100vw;
+	height:100vh;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: comic;
+	color:#853D2E;
+	font-size: 18pt;
+	animation: aloading 1s 10s linear forwards;
+}
+.loading p{
+	margin-top:3vh;
+}
+@keyframes aloading{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.loadbar{
+	width:40%;
+	height:5vh;
+	
+	border: 2px solid #853D2E;
+	border-radius: 50px;
+	overflow: hidden;
+}
+.load{
+	height:5vh;
+	animation: aload 10s linear forwards;
+	background: #DE884F;
+	border-radius: 50px;
+	
+}
+@keyframes aload {
+	0%{
+		margin-right:100%;
+		opacity: 1;
+		width:0%;
+	}
+	20%{
+		margin-right:80%;
+		opacity: 1;
+		width:20%;
+	}
+	30%{
+		margin-right:72%;
+		opacity: 1;
+		width:28%;
+	}
+	90%{
+		margin-right:32%;
+		opacity: 1;
+		width:68%;
+	}
+	95%{
+		margin-right:31%;
+		opacity: 1;
+		width:69%;
+	}
+	100%{
+		margin-right:0%;
+		opacity: 1;
+		width:100%;
+	}
+}
+/*END LOADING PAGE*/
+.content{
+	font-family: bubble;
+}
+.content h1{
+	font-size: 72pt;
+	color:#853D2E
+}
+/*                menu          */
+/* Style the buttons */
+.btn {
+	font-family: comic;
+  border: none;
+  outline: none;
+	margin:0 10px;
+	width:10%;
+  padding: 8px;
+  background:none;
+  cursor: pointer;
+  font-size: 18px;
+	border-radius: 20px;
+	color:#853D2E;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: #DE884F;
+  color: white;
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+}

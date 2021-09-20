@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nguyen Vy - About</title>
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/icon/favicon.ico"/>
+	<link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+	<div id="about">
+		<div id="myDIV" class="row"> 
+				<a href="index.html"><button class="btn">Home</button></a>
+				<a href="about.html"><button class="btn active">About</button></a>
+				<a href="works.html"><button class="btn">Works</button></a>
+				<a href="gallery.html"><button class="btn">Gallery</button></a>
+				<a href="contact.html"><button class="btn">Contact</button></a>
+		</div>
+		<div class="gif">
+			<img src="img/gif/about.gif" alt="">
+		</div>
+		<div class="gif2">
+			<img src="img/gif/about2.gif" alt="">
+		</div>
+		<div id="aboutme">
+			
+			<div class="title col-1 prl-5">
+				<img src="img/About/title-1.svg" alt="">
+			</div>
+			<div class="image col-5 prl-5">
+				<img src="img/About/avatar.png" alt="">
+			</div>
+			<div class="text col-5 prl-5">
+				<p>Xin chào! Mình là Nguyen Vy!<br>
+					Hiện tại mình vừa là sinh viên vừa là một Graphic Designer.
+					<br>Sau đây là một số thông tin về mình~
+				</p>
+				<h1 class="ptb-3" style="text-transform: uppercase; color: #DE884F">Học vấn</h1>
+				<p style="font-weight: 600; text-transform: uppercase">2020: Arena Multimedia</p>
+				<p>Mỹ thuật Đa phương tiện</p>
+				
+				<p style="font-weight: 600; text-transform: uppercase">2019: Đại học công nghệ tp.hcm</p>
+				<p>Kinh doanh Quốc tế</p>
+				<h1 class="ptb-3" style="text-transform: uppercase; color: #DE884F">Kinh nghiệm</h1>
+				<p style="font-weight: 600; text-transform: uppercase">03/2021: Công ty đồ chơi<br>Yay - for kids</p>
+				<p>Junior Graphic Designer</p>
+			</div>
+			<div class="nextbtn col-1 prl-5 hvr-grow">
+				<a href="#software"><img src="img/icon/next-btn.svg" alt=""></a>
+			</div>
+		</div>
+		<div id="software">
+			<div class="prevbtn col-1 prl-5 hvr-grow">
+				<a href="#aboutme"><img src="img/icon/prev-btn.svg" alt=""></a>
+			</div>
+			<div class="title2 col-4 prl-5" style="z-index: 50;">
+			<h1 style="text-transform: uppercase;font-family: bubble; font-size: 9rem;color: #853D2E">Soft</h1>
+			<h1 style="text-transform: uppercase;font-family: bubble; font-size: 9rem;color:#853D2E">Ware</h1>
+			</div>
+			<div class="col-1"></div>
+			<div class="skillbar col-5 prl-5 scroll-reveal" data-distance="0" data-duration="1000" style="z-index: 50;">
+				<div class="ais ptb-4">
+					<div><p  style="font-size: 2.5rem; font-weight: 500;">Ai</p></div><div class="border"><div class="aiload"></div></div>
+				</div>
+				<div class="pss ptb-4">
+					<div><p style="font-size: 2.5rem; font-weight: 500;">Ps</p></div><div class="border"><div class="psload"></div></div>
+				</div>
+				<div class="lrs ptb-4">
+					<div><p  style="font-size: 2.5rem; font-weight: 500;">Lr</p></div><div class="border"><div class="lrload"></div></div>
+				</div>
+				<div class="ids ptb-4">
+					<div><p  style="font-size: 2.5rem; font-weight: 500;">Id</p></div><div class="border"><div class="idload"></div></div>
+				</div>
+				<div class="ans ptb-4">
+					<div><p  style="font-size: 2.5rem; font-weight: 500;">An</p></div><div class="border"><div class="anload"></div></div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+			<div class="nextbtn col-1 prl-5 hvr-grow">
+				<a href="#hobby"><img src="img/icon/next-btn.svg" alt=""></a>
+			</div>
+		</div>
+		<div id="hobby">
+			<div class="prevbtn col-1 prl-5 hvr-grow">
+				<a href="#software"><img src="img/icon/prev-btn.svg" alt=""></a>
+			</div>
+			<div class="mid col-10 prl-5">
+				<h1 style="text-transform: uppercase;font-family: bubble; font-size: 8rem;color: #853D2E; z-index: 70;">Hobby</h1>
+				<div class="image3">
+					<div  class="col-4 prl-5 ptb-4 hvr-hang">
+						<img src="img/About/paint.png" alt="">
+						<h3 style="color: #853D2E">Vẽ Tranh</h3>
+					</div>
+					<div  class="col-4 prl-5 ptb-4 hvr-hang">
+						<img src="img/About/game.png" alt="">
+						<h3 style="color: #853D2E">Chơi game</h3>
+					</div>
+					<div  class="col-4 prl-5 ptb-4 hvr-hang">
+						<img src="img/About/photography.png" alt="">
+						<h3 style="color: #853D2E">Chụp ảnh</h3>
+					</div>
+				</div>
+			</div>
+			<div class="prevbtn col-1 prl-5 hvr-grow"></div>
+		</div>
+	</div>
+<!--	menu-->
+	<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+		</script>
+		
+<!--//		scrolling animate-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
+	
+	<!-- truot noi dung -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+	<script  src="js/script.js"></script>
+</body>
+</html>

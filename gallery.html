@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nguyen Vy - Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="shortcut icon" href="img/icon/favicon.ico"/>
+	
+</head>
+
+<body>
+	<div id="gallery">
+			<div id="myDIV" class="row"> 
+				<a href="index.html"><button class="btn">Home</button></a>
+				<a href="about.html"><button class="btn">About</button></a>
+				<a href="works.html"><button class="btn">Works</button></a>
+				<a href="gallery.html"><button class="btn active">Gallery</button></a>
+				<a href="contact.html"><button class="btn">Contact</button></a>
+		</div>
+		<div class="gif">
+			<img src="img/gif/about.gif" alt="">
+		</div>
+		<div class="gif2">
+			<img src="img/gif/about2.gif" alt="">
+		</div>
+		<div class="title col-1 prl-5" style="z-index: 50">
+				<img  src="img/Gallery/gallery_title.svg" alt="">
+		</div>
+		
+		<div class="col-1"></div>
+		<div class="art col-9 ptb-2" style="z-index: 70">
+			<div class="art1 col-5 prl-3 ptb-2">
+				<img class="hvr-float" src="img/Gallery/1.jpg" alt="">
+			</div>
+			<div class="art2 col-7 prl-3">
+				<div class="top ptb-2">
+					<div class="left col-8 prl-3">
+						<img class="hvr-float" src="img/Gallery/2.jpg" alt="">
+					</div>
+					<div class="right col-4 prl-3">
+						<img class="hvr-float" src="img/Gallery/3.jpg" alt="">
+					</div>
+				</div>
+				<div class="bot ptb-2">
+					<div class="left2 col-4 prl-3">
+						<img class="hvr-float" src="img/Gallery/4.jpg" alt="">
+					</div>
+					<div class="right2 col-8 prl-3">
+						<img class="hvr-float" src="img/Gallery/5.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-1"></div>
+	</div>
+	
+<!--	menu-->
+	<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+</body>
+</html>

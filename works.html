@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nguyen Vy - Works</title>
+	<link rel="stylesheet" href="css/works.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="shortcut icon" href="img/icon/favicon.ico"/>
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="works">
+		<div id="myDIV" class="row"> 
+				<a href="index.html"><button class="btn">Home</button></a>
+				<a href="about.html"><button class="btn">About</button></a>
+				<a href="works.html"><button class="btn active">Works</button></a>
+				<a href="gallery.html"><button class="btn">Gallery</button></a>
+				<a href="contact.html"><button class="btn">Contact</button></a>
+		</div>
+		<div id="section1">
+			<div class="gif">
+			<img src="img/gif/home.gif" alt="">
+		</div>
+		<div class="gif2">
+			<img src="img/gif/about2.gif" alt="">
+		</div>
+			<div class="title col-1 prl-5">
+				<img src="img/Works/works_title.svg" alt="">
+			</div>
+			<div class="col-1"></div>
+			<div class="slide col-7 prl-5">
+				<i class="carousel-prev hvr-grow">
+					<img src="img/icon/prev-btn.svg" alt="" width="50px ">
+				</i>
+				
+				<div class="carousel-frame" data-aos="fade-up" data-aos-duration="600">
+					<div class="carousel-slide">
+						<img src="img/Works/Social-Post.png" alt="" width="500px">
+						<img src="img/Works/Social-Post2.png" alt="">
+						<img src="img/Works/Social-Post3.png" alt="">
+						<img src="img/Works/Social-Post4.png" alt="">
+					</div>					
+					<ol class="carousel-dots">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+				</div>
+				<i class="carousel-next hvr-grow">
+					<img src="img/icon/next-btn.svg" alt="" width="50px">
+				</i>
+			</div>
+			<div class="col-3"></div>
+			<div id="nav" class="col-3 prl-5">
+				<div class="select">
+					<a href="#section1">
+						<img class="hvr-grow" src="img/Works/Social-Post.png" alt="">
+					</a>
+					<h3 class="ptb-2" style="text-transform: uppercase;font-family: bubble; font-size: 1rem;color: #853D2E">Social Post</h3>
+				</div>
+				<div class="select">
+					<a href="#section2">
+						<img class="hvr-grow" src="img/Works/photography.png" alt="">
+					</a>
+					<h3 class="ptb-2" style="text-transform: uppercase;font-family: bubble; font-size: 1rem;color: #853D2E">Photography</h3>
+					
+				</div>
+				<div class="select">
+					<a href="#section3">
+						<img class="hvr-grow" src="img/Works/illustration.png" alt="">
+					</a>
+					<h3 class="ptb-2" style="text-transform: uppercase;font-family: bubble; font-size: 1rem;color: #853D2E">Illustration</h3>
+				</div>
+			</div>
+		</div>
+		<div id="section2">
+			<div class="title col-1 prl-5">
+				<img src="img/Works/works_title.png" alt="">
+			</div>
+			<div class="col-1"></div>
+			<div class="slide col-7 prl-5">
+				<div class="prevbtn hvr-grow" style=" cursor: pointer;">
+					<img src="img/icon/prev-btn.svg" alt="" width="50px ">
+				</div>
+				<div class="carousel-frame" data-aos="fade-up" data-aos-duration="600">
+					<img src="img/Works/photography.png" alt="" width="500px"></div>
+				
+				<div class="nextbtn hvr-grow" style=" cursor: pointer;">
+					<img src="img/icon/next-btn.svg" alt="" width="50px">
+				</div>
+			</div>
+			<div class="col-3">
+			</div>
+		</div>
+		<div id="section3">
+			<div class="title col-1 prl-5">
+				<img src="img/Works/works_title.png" alt="">
+			</div>
+			<div class="col-1"></div>
+			<div class="slide col-7 prl-5">
+				<div class="prevbtn hvr-grow" style=" cursor: pointer;">
+					<img src="img/icon/prev-btn.svg" alt="" width="50px ">
+				</div>
+				<div class="carousel-frame" data-aos="fade-up" data-aos-duration="600">
+					<img src="img/Works/illustration.png" alt="" width="500px"></div>
+				
+				<div class="nextbtn hvr-grow" style=" cursor: pointer;">
+					<img src="img/icon/next-btn.svg" alt="" width="50px">
+				</div>
+			</div>
+			<div class="col-3"></div>
+		</div>
+
+
+	</div>
+<!--	script menu-->
+	<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+		</script>
+		
+<!--//		scrolling animate-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+  AOS.init();
+</script>
+<!--	script slider-->
+	<script
+      src="https://kit.fontawesome.com/42e3e833b9.js"
+      crossorigin="anonymous"></script>
+	<script src="js/slider.js"></script>
+</body>
+</html>

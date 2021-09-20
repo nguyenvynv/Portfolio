@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Mali', cursive;*/
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+/*color
+#853D2E
+#DE884F
+#ffd98e
+*/
+html{
+	font-size:14pt;
+}
+@font-face{
+	font-family: bubble;
+src:url('../font/Bubblegum.ttf');
+}
+body{
+	overflow: hidden;
+}
+#wrapper{
+	width:100vw;
+/*	float:left;*/
+	position: relative;
+	overflow: hidden;
+/*	overflow-y: scroll;*/
+}
+#intro{
+	width:100vw;
+	height: 100vh;
+	position: relative;
+	top:0;
+	left:0;
+	overflow: hidden;
+	display: flex;
+	background: #fff;
+	z-index: 30;
+}
+.me{
+	position: relative;
+	top:0;
+	left:0;
+}
+.imgme{
+	position: absolute;
+	top:2vh;
+	z-index: 20;
+}
+.content{
+	position: relative;
+/*	margin-left: 8.33%;*/
+	padding:20vh 0 10vh;
+	box-sizing: border-box;
+	
+}
+.name1{
+	font-family: bubble;
+	font-size: 4.3rem;
+	color: #853D2E ;
+}
+.job1{
+	font-family: 'Mali', cursive;
+	font-size:2.5rem;
+	color: #DE884F;
+}
+.btn1 {
+	
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #DE884F;
+  border: 5px solid #853d2e;
+  color: #FFFFFF;
+  text-align: center;
+	font-family: 'Mali', cursive;
+	font-weight: 500;
+  font-size: 2rem;
+  padding: 20px;
+  width: 410px;
+/*  transition: all 0.5s;*/
+  cursor: pointer;
+  margin: 5px;
+}
+.btn1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -25px;
+/*  transition: 0.5s;*/
+}
+
+.btn1:hover span {
+  padding-right: 25px;
+}
+
+.btn1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.social{
+	width: 410px;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	top:66vh;
+	
+}
+.ic_box{
+	display: flex;
+	height:70px;
+	align-items: center;
+}
+.ic_box a{
+	text-decoration: none;
+	color: #853D2E;
+	font-family: 'Mali', cursive;
+	font-size:1rem;
+	font-weight: 500;
+	
+}
+.ic_box:hover{
+	
+}
+.notification{
+	width:100%;
+	position: absolute;
+	top:90vh;
+	display: flex;
+	justify-content: center;
+	z-index: 100;
+}
+#home{
+	width:100vw;
+	height:100vh;
+	margin:0 auto;
+	display: flex;
+	padding-top: 4vh;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+/*home page*/
+/* Style the buttons */
+#myDIV{
+	position: fixed;
+	width: 100vw;
+	top:3vh;
+	
+
+}
+.btn {
+	margin:0 2.3vw;
+  border: none;
+  outline: none;
+  padding:1vh 0;
+	width:10vw;
+  background:rgba(0,0,0,0.00);
+  cursor: pointer;
+  font-size: 1.4rem;
+	border-radius: 30px;
+	font-family: 'Mali', cursive;
+	color:#853D2E;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: #853D2E;
+  color: white;
+}
+.nguyenvy a{
+	text-decoration: none;
+	font-family: bubble;
+	font-size: 3rem;
+	padding: 20px 20px;
+	background: #853D2E;
+	color: white;
+	border-radius: 15px;
+	
+}
+.portfolio a{
+	text-decoration: none;
+	font-family: bubble;
+	padding: 20px 20px;
+	font-size: 3rem;
+	color:#853D2E;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 24vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+/*  overflow: auto;  Enable scroll if needed */
+/*  background-color: rgb(0,0,0);  Fallback color */
+/*  background-color: rgba(0,0,0,0.4);  Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  
+/*  margin: auto;*/
+/*  padding: 20px;*/
+/*
+  border: 3px solid #853D2E;
+	border-radius: 30px;
+	overflow: hidden;
+*/
+/*	background-color: #fff;*/
+  width: 50vw;
+	height: 60vh;
+}
+.topbar{
+	width: 100%;
+	background-color: #ffd98e;
+	border: 3px solid #853D2E;
+	
+}
+.popup-content{
+	width: 100%;
+	background-color: #fff;
+	border: 3px solid #853D2E;
+	height:40vh;
+	display: flex;
+/*	box-sizing: border-box;*/
+}
+.deadline{
+	padding: 20px 10px;
+	box-sizing: border-box;
+	width: 15%;
+	text-align: center;
+	height: 10vh;
+}
+.textname{
+	margin-left: 1vw;
+	font-size: 1.5rem;
+	font-family: 'Mali', cursive;
+	color: #853D2E;
+}
+
+/* The Close Button */
+.close {
+	margin-right: 1vw;
+  color: #853D2E;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	margin-right: 1vw;
+  color: #58291F;
+  text-decoration: none;
+  cursor: pointer;
+}
+#myBtn{
+	width:60vw;
+	 border: none;
+  outline: none;
+	background-color: #fff;
+	cursor: pointer;
+}
+#myBtn img{
+	width:60vw;
+}
