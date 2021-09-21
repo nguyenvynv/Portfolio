@@ -27,8 +27,9 @@ body{
 
 }
 #myDIV{
+	left:10vw;
 	position: fixed;
-	width: 100vw;
+	width: 80vw;
 	top:3vh;
 	z-index: 99;
 }
